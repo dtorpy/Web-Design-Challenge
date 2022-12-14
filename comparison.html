@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Add a title here -->
+
+    <!-- Boostrap Stylesheet -->
+    <!--<link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+
+  </head>
+
+  <body>
+        <!-- Start of navbar -->
+    <!--From getbootstrap.com with changes as needed (i.e. color, dropdown ect.) https://getbootstrap.com/docs/4.0/components/navbar/-->
+    <!--Left side putton-->
+    <div class="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" style="background-color: teal; color:white" href="index.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <!--right side dropdown-->
+        <div class="collapse navbar-collapse" id="navbarDropdownMenuLink">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots </a>
+              <!--Items in the dropdown-->
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="visualizations\temp.html">Max Temperature</a>
+                <a class="dropdown-item" href="visualizations\humidity.html">Humidity</a>
+                <a class="dropdown-item" href="visualizations\cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="visualizations\wind.html">Wind Speed</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comparison.html">COMPARISON</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">DATA</a>
+            </li>
+          </ul>
+          </div>
+      </nav>
+    </div>
+    <!-- End of navbar -->
+
+    <div class="container">
+      <div class="row">
+        <div>
+          <div class="box">
+            <h3 class="title">Comparison: Latitude vs. X</h3>
+            <hr>
+            <p>Click any graph for more information.</p>
+            <div class="container" style="padding-bottom: 40px;">
+              <div class="row" >
+                <div class="col-md-6 col-sm-12" style="padding: 30px;">
+                  <div class="title">Max Temperature</div>
+                  <a href="visualizations/temp.html">
+                    <img class="panel" src="assets\images\Fig1.png" alt="Latitude vs Max Temperature">
+                  </a>
+                </div>
+                <div class="col-md-6 col-sm-12" style="padding: 30px;">
+                  <div class="title">Humidity</div>
+                  <a href="visualizations/humidity.html">
+                    <img class="panel" src="assets\images\Fig2.png" alt="Latitude vs Humidity">
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-sm-12" style="padding: 30px;">
+                  <div class="title">Cloudiness</div>
+                  <a href="visualizations/cloudiness.html">
+                    <img class="panel" src="assets\images\Fig3.png" alt="Latitude vs Cloudiness">
+                  </a>
+                </div>
+                <div class="col-md-6 col-sm-12" style="padding: 30px;">
+                  <div class="title">Wind Speed</div>
+                  <a href="visualizations/windSpeed.html">
+                    <img class="panel" src="assets\images\Fig4.png" alt="Latitude vs Wind Speed">
+                  </a>
+                </div>          
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+  </body>
+
+</html>

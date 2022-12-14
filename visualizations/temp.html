@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Bootstrap Visualization Dashboard</title>
+    <!-- Add a title here -->
 
     <!-- Boostrap Stylesheet -->
     <!--<link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+
     <!-- Our own CSS stylesheet -->
-    <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+    <link rel="stylesheet" href="../assets/css/styles.css" media="screen">
 
   </head>
 
@@ -53,25 +54,20 @@
     <!-- End of navbar -->
 
     <!-- Start of container -->
-          <!-- Start of Visualizations imageNav Area -->
+
+          <!-- Start of left Visualizations Area -->
           <div class="container">
-            <br>
             <div class="row">
-              <!--Left column-->
-              <div class="col-md-7" style="display:inline-block;">
-                <br>
-                <h1>Max Temperature</h1>
-                <br>
-                <p>
-                <a href="visualizations\temp.html"><img src="assets\images\Fig1.png" alt="Latitude vs. Temperature"></a>  
-                This project allowed us to pull data using the Open Weather Map API to pull information indorder to investigate the corrilation between latitude and weather.  
-                <br>
-                We can then use this to make data driven decision on location and weather around the globe.  
-              </p>
+              <div class="col-lg-7 col-md-12">
+                <div class="box" style="padding-bottom: 5px;">
+                  <h2 class="title">Cloudiness</h2>
+                  <hr>
+                  <img src="..\assets\images\Fig1.png" alt="Latiude vs Temperature">
+                  <p>
+                    As the lat approaches 0 degrees (the equator) the max temp increases. 
+                  </p>         
+                </div>
               </div>
-            
-              <!--End Left column-->
-              <!--Right column-->
               <div class="col-lg-5 col-md-12">
                 <div class="box">
                   <h2 class="title">Visualizations</h2>
@@ -79,43 +75,45 @@
                   <div class="container">
                     <div class="row" style="padding-bottom: 30px;">
                       <div class="col-6">
-                        <a href="visulizations\temp.html">
-                          <img class="panel" src="assets\images\Fig1.png" alt="Latitude vs Max Temperature">
+                        <a href="./maxTemp.html">
+                          <img class="panel" src="..\assets\images\Fig1.png" alt="Latitude vs Max Temperature">
                         </a>
                       </div>
                       <div class="col-6">
-                        <a href="visulizations\humidity.html">
-                          <img class="panel" src="assets\images\Fig2.png" alt="Latitude vs Humidity">
+                        <a href="./humidity.html">
+                          <img class="panel" src="..\assets\images\Fig2.png" alt="Latitude vs Humidity">
                         </a>
                       </div>
                     </div>
                     <div class="row" style="padding-bottom: 30px;">
                       <div class="col-6">
-                        <a href="visulizations\cloudiness.html">
-                          <img class="panel" src="assets\images\Fig3.png" alt="Latitude vs Cloudiness">
+                        <a href="./cloudiness.html">
+                          <img class="panel" src="..\assets\images\Fig3.png" alt="Latitude vs Cloudiness">
                         </a>
                       </div>
                       <div class="col-6">
-                        <a href="visulizations\wind.html">
-                          <img class="panel" src="assets\images\Fig4.png" alt="Latitude vs Wind Speed">
+                        <a href="./wind.html">
+                          <img class="panel" src="..\assets\images\Fig4.png" alt="Latitude vs Wind Speed">
                         </a>
                       </div>          
                     </div>
                   </div>
                 </div>
               </div>
-              <!--End Right column-->
+          
+          
+          
             </div>
           </div>
+        
           <!-- End of the Visualizations imageNav Area -->
+
     <!-- End of container -->
 
     <!-- jQuery CDN -->
-    <!--<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
     <!-- Bootstrap CDN -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
   </body>
